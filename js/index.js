@@ -67,15 +67,21 @@ destinationImg.addEventListener('click', event => {
 const destTitle = document.querySelectorAll('.destination p');
 
 destTitle[1].addEventListener('mouseenter', event => {
+    destTitle[0].style.backgroundColor = 'red';
     destTitle[1].style.backgroundColor = 'yellow';
+    destTitle[2].style.backgroundColor = 'red';
 });
 
 const button = document.querySelectorAll('.btn');
 
 button[2].addEventListener('wheel', event => {
-    button[0].style.color = 'black'
+    button[0].style.color = 'black';
+    button[1].style.color = 'black';
+    button[2].style.color = 'black';
 });
 
 button[0].addEventListener('mouseleave', event => {
+    button[0].style.backgroundColor = 'pink'
+    button[1].style.backgroundColor = 'pink'
     button[2].style.backgroundColor = 'pink'
 });
