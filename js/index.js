@@ -23,9 +23,9 @@ navItems[0].addEventListener('dblclick', event => {
     event.stopPropagation();
 });
 
-navItems.forEach(link => {link.addEventListener('click', event => {
+navItems.forEach(link => link.addEventListener('click', event => {
     event.preventDefault();
-})})
+}))
 
 const navLinks = document.querySelector('.nav');
 
